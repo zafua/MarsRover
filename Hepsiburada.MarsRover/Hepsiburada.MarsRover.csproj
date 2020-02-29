@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Enums\" />
+    <Folder Include="Rover\" />
+    <Folder Include="Command\" />
+    <Folder Include="RoverEngine\" />
+    <Folder Include="Land\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Rover\IRoverFactory.cs" />
+    <Compile Remove="DirectionHelper.cs" />
+  </ItemGroup>
+</Project>
